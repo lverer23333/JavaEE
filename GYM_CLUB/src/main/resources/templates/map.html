@@ -1,0 +1,309 @@
+
+ 
+<!DOCTYPE HTML>
+<html>
+<head>
+<link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../../js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="../../css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Amaranth:400,700' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+ <script src="../../js/bootstrap.min.js"></script>
+ <link rel="stylesheet" href="../../css/flexslider.css" type="text/css" media="screen" />
+<!--responsive-->
+ <script src="../../js/responsiveslides.min.js"></script>
+<script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      $("#slider2").responsiveSlides({
+        auto: true,
+        pager: true,
+        speed: 300,
+        namespace: "callbacks",
+      });
+    });
+  </script>
+  <style type="text/css">
+	
+	/*设置div样式的整体布局*/
+	.page-icon{
+		margin:20px 0 0 0;/*设置距离顶部20像素*/
+		font-size:0;/*修复行内元素之间空隙间隔*/
+		text-align:center;/*设置内容居中显示*/
+	}
+	
+	/*设置共有的的样式布局，主要是进行代码优化，提高运行效率*/
+	.page-icon a,.page-disabled,.page-next{
+		border:1px solid #ccc;
+		border-radius:3px;
+		padding:4px 10px 5px;
+		font-size:14PX;/*修复行内元素之间空隙间隔*/
+		margin-right:10px;
+	}
+	
+	/*对 a 标签进行样式布局 */
+	.page-icon a{
+		text-decoration:none;/*取消链接的下划线*/
+		color:#005aa0;
+	}
+	
+	.page-current{
+		color:#ff6600;
+		padding:4px 10px 5px;
+		font-size:14PX;/*修复行内元素之间空隙间隔*/
+	}
+	
+	.page-disabled{
+		color:#ccc;
+	}
+	
+	.page-next i,.page-disabled i{
+		cursor:pointer;/*设置鼠标经过时的显示状态，这里设置的是显示状态为小手状态*/
+		display:inline-block;/*设置显示的方式为行内块元素*/
+		width:5px;
+		height:9px;
+		background-image:url(http://img.mukewang.com/547fdbc60001bab900880700.gif);/*获取图标的背景链接*/
+	}
+	.page-disabled i{
+		background-position:-80px -608px;
+		margin-right:3px;
+	}
+ 
+	.page-next i{
+		background-position:-62px -608px;
+		margin-left:3px;
+	}
+</style>
+</head>
+<body>
+<!--header start here-->
+<!-- animated-css -->
+		<link href="../../css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="../../js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+<!-- animated-css -->
+<!-- NAVBAR
+================================================== -->
+<div class="header">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="logo wow slideInLeft" data-wow-delay="0.3s">
+                    <a class="navbar-brand" href="index.html"><img src="../../images/logo1.png" /></a>
+              </div>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+             <nav class="cl-effect-11">
+              <ul class="nav navbar-nav">
+                <li><a href="/" data-hover="Home">Home</a></li>
+                 <li><a href="/contacts/map" data-hover="GYM">GYM</a></li>  
+                <li><a href="/contacts/about" data-hover="About">About</a></li>               
+                <li><a href="/contacts/services" data-hover="Services">Services</a></li>
+                <li><a href="/contacts/shortcodes" data-hover="Shortcodes">Shortcodes</a></li>
+                <li><a href="/contacts/portfolio" data-hover="Portfolio">Portfolio</a></li>
+                <li><a href="/contacts/person" data-hover="Login">Login</a></li>
+              </ul>
+            </nav>
+            </div>
+            <div class="clearfix"> </div>
+             </nav>
+          </div>
+           <div class="clearfix"> </div>
+    </div>
+     <div class="clearfix"> </div>
+</div>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <style type="text/css">
+        #allmap{width:300px;height:300px;}
+        p{margin-left:5px; font-size:14px;}
+    </style>
+    <style type="text/css">
+        body, html {width: 100%;height: 100%; margin:0;font-family:"微软雅黑";}
+        #allmap{height: 350px;width:100%;}
+        #r-result,#r-result table{width:100%;}
+        input { font-family: "micrsoft yahei"; width: 80%; height: 2em; font-size: 1em; line-height: 2em; border: 0px; outline: 0px; padding: .2em 1em; margin: 0em 10%;}
+        .btn-group { width: 100%; border-top: 1px solid #DDD; border-bottom: 2px solid #DDD;}
+        button {width: 32%; text-align: center; border: 0; border-radius: 0; background-color: inherit; height: 44px; line-height: 44px; font-size: 15px;}
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=OGW3EjaHGpGZqzoYYo9jZUtPVFOvCHEm"></script>
+    <script type="text/javascript" src="http://libs.baidu.com/jquery/1.8.2/jquery.min.js"></script>
+    <title>BookSiYi</title>
+</head>
+<body>
+<div id="search">
+    <input type="text" id="start" placeholder="正在定位您的位置..." style="border-bottom: 1px solid #DDD; " />
+    <nobr>
+    <input type="text" id="end" placeholder="健身房" style="width:20%; "/> 
+    <button id="" class="button" onclick="searchRoute()">搜索</button>
+    </nobr>
+    <div class="btn-group">
+        <button id="bus-search" class="button">公交</button>
+        <button id="driver-search" class="button">驾车</button>
+        <button id="walk-search" class="button">步行</button>
+    </div>
+</div>
+<div id="allmap"></div>
+<div id="r-result"></div>
+ 
+ 
+ 
+<script type="text/javascript">
+ 
+        $("#bus-search").css("background-color", "#95B7EE");
+        window.start_point = "";
+        window.end_point = "";
+        // 定位对象
+        var map;
+        var geoc = new BMap.Geocoder();
+        var geolocation = new BMap.Geolocation();
+        geolocation.getCurrentPosition(function(r){
+            if(this.getStatus() == BMAP_STATUS_SUCCESS){
+                //var mk = new BMap.Marker(r.point);
+                //map.addOverlay(mk);
+                //map.panTo(r.point);
+                window.start_point = r.point.lng+","+r.point.lat;
+ 
+ 
+                map = new BMap.Map("allmap");   // 创建Map实例
+                var ep = window.start_point.split(",");
+ 
+ 
+                function addMapControl(){
+                    //向地图中添加缩放控件
+                    var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_ZOOM});
+                    map.addControl(ctrl_nav);
+ 
+                    //向地图中添加比例尺控件
+                    var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,offset: new BMap.Size(10, 5)});
+                    map.addControl(ctrl_sca);
+ 
+                }
+                map.centerAndZoom(new BMap.Point(ep[0],ep[1]), 13);
+                map.enableScrollWheelZoom(true);       //启用滚轮放大缩小
+                var local = new BMap.LocalSearch(map, {
+                    renderOptions:{map: map}
+                });
+                var s=document.getElementById("end").value;
+                local.search(s);
+ 
+                setLocation(r.point);
+ 
+                addMapControl();
+            }else {
+                $("#start").attr("placeholder","请输入您的当前位置")
+                alert('无法定位到您的当前位置，导航失败，请手动输入您的当前位置！'+this.getStatus());
+            }
+        },{enableHighAccuracy: true});
+ 
+ 
+        function setLocation(point){
+            geoc.getLocation(point, function(rs){
+                var addComp = rs.addressComponents;
+                var result = addComp.province + addComp.city + addComp.district;
+                $("#start").val(result);
+ 
+                //设置定位图标
+                var new_point = new BMap.Point(rs.point.lng,rs.point.lat);
+                var myIcon = new BMap.Icon("../images/起点.png", new BMap.Size(30,30),{
+                    anchor:new BMap.Size(13,15),
+                    imageOffset:new BMap.Size(0,0)
+                });
+                var marker = new BMap.Marker(new_point,{icon:myIcon,isOpen:true});
+                map.addOverlay(marker);
+                var opts = {
+                    width : 40,     // 信息窗口宽度
+                    height: 18,     // 信息窗口高度
+                    title : "我的位置" , // 信息窗口标题
+                    isOpen: 1,
+                }
+                var infoWindow = new BMap.InfoWindow("地址 : "+$("#start").val(), opts);  // 创建信息窗口对象
+                marker.addEventListener("click", function(){
+                    map.openInfoWindow(infoWindow,new_point); //开启信息窗口
+                });
+                //设置监听，点选地图设终点，规划路线
+                map.addEventListener("click",
+                    function(e) {
+                        window.end_point = e.point.lng +","+ e.point.lat;
+                        var local = new BMap.LocalSearch(map, {
+                            renderOptions:{map: map}
+                        });
+                        searchRoute();
+                    });
+            });
+        }
+ 
+        var type="bus";
+        $("#bus-search,#driver-search,#walk-search").click(function(){
+            var id = $(this).attr("id");
+            $(".button").css("background-color","#fff");
+            $("#"+id).css("background-color","#95B7EE");
+            type = "bus";
+            if(id == "bus-search"){
+                type = "bus";
+            }else if(id == "driver-search"){
+                type = "driver";
+            }else if(id == "walk-search"){
+                type = "walk";
+            }
+            searchRoute();
+        });
+ 
+        //搜索路线
+        function searchRoute(){
+            if($("#end").val().length!=0){
+                var end = $("#end").val();
+                $("#end").val("");
+            }else{
+                var pe = window.end_point.split(",");
+                var end = new BMap.Point(pe[0],pe[1]);
+            }
+            var ps = window.start_point.split(",");
+            var start = new BMap.Point(ps[0], ps[1]);
+            var starIcon = new BMap.Icon("../images/起点.png", new BMap.Size(22, 32));
+            var endIcon = new BMap.Icon("../images/终点.png", new BMap.Size(22,32));
+            if(type == "bus"){
+                var transit = new BMap.TransitRoute(map, {renderOptions: {map: map, panel: "r-result", autoViewport: false}});
+                transit.search(start, end);
+                transit.setMarkersSetCallback(function(result){
+                    result[0].marker.setIcon(starIcon);
+                    result[1].marker.setIcon(endIcon);
+                });
+            }else if(type == "driver"){
+                var driving = new BMap.DrivingRoute(map, {renderOptions: {map: map, panel: "r-result", autoViewport: false}});
+                driving.search(start, end);
+                driving.setMarkersSetCallback(function(result){
+                    result[0].marker.setIcon(starIcon);
+                    result[1].marker.setIcon(endIcon);
+                });
+            }else if(type == "walk"){
+                var walking = new BMap.WalkingRoute(map, {renderOptions: {map: map, panel: "r-result", autoViewport: false}});
+                walking.search(start, end);
+                walking.setMarkersSetCallback(function(result){
+                    result[0].marker.setIcon(starIcon);
+                    result[1].marker.setIcon(endIcon);
+                });
+                //walking.search("天坛公园","故宫");
+            }
+        }
+</script>
+</body>
+</html>

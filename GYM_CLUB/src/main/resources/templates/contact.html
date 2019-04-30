@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Register</title>
+
+<link href="../css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="../js/jquery-1.11.0.min.js"></script>
+<!-- Custom Theme files -->
+<link href="../css/style.css" rel="stylesheet" type="text/css" media="all"/>
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<!--Google Fonts-->
+<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Amaranth:400,700' rel='stylesheet' type='text/css'>
+<!--google fonts-->
+<!-- animated-css -->
+		<link href="../css/animate.css" rel="stylesheet" type="text/css" media="all">
+		<script src="../js/wow.min.js"></script>
+		<script>
+		 new WOW().init();
+		</script>
+<!-- animated-css -->
+ <script src="../js/bootstrap.min.js"></script>
+</head>
+<body>
+<!--header start here-->
+<!-- NAVBAR
+==================================================-->
+ 
+<div class="header">
+    <div class="navbar-wrapper">
+      <div class="container">
+        <nav class="navbar navbar-inverse navbar-static-top">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <div class="logo wow slideInLeft" data-wow-delay="0.3s">
+                    <a class="navbar-brand" href="index.html"><img src="../images/logo1.png" /></a>
+              </div>
+            </div>
+           <div id="navbar" class="navbar-collapse collapse">
+              <nav class="cl-effect-11">
+              <ul class="nav navbar-nav">
+                 <li><a href="/" data-hover="Home">Home</a></li>
+                  <li><a href="/contacts/map" data-hover="GYM">GYM</a></li>  
+                <li><a href="/contacts/about" data-hover="About">About</a></li>               
+                <li><a href="/contacts/services" data-hover="Services">Services</a></li>
+                <li><a href="/contacts/shortcodes" data-hover="Shortcodes">Shortcodes</a></li>
+                <li><a href="/contacts/portfolio" data-hover="Portfolio">Portfolio</a></li>
+                <li><a href="/contacts/person" data-hover="Login">Login</a></li>
+              </ul>
+            </nav>
+            </div>
+            <div class="clearfix"> </div>
+             </nav>
+          </div>
+           <div class="clearfix"> </div>
+    </div>
+     <div class="clearfix"> </div>
+</div>
+<!--header end here-->
+<!--contact start here-->
+<div class="contact">
+	<div class="contact-main">
+	   <div class="container">
+			<div class="contact-top wow fadeInDownBig" data-wow-delay="0.3s">
+				<h1>Register</h1>
+				<p>Please fill in the information accurately.</p>
+			</div>
+			<div class="contact-bottom">
+
+                            <form action="/contacts/register" th:action="@{/contacts/register}" th:object="${person}" method="post">
+                                <div class="col-md-7 contact-left wow slideInLeft" data-wow-delay="0.3s">
+                                <div class="form-group">
+                                    <label for="inputNickName">Nick Name</label>
+                                    <input type="text" class="form-control" id="inputNickName" placeholder="Nick Name" th:field="*{nick_name}" name="nick_name" />
+                                    <span  class="help-block" th:if="${#fields.hasErrors('nick_name')}" th:errors="*{nick_name}">Nick Name Error</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPassword">Password</label>
+                                    <input type="password" class="form-control" id="inputPassword" placeholder="Password" th:field="*{password}" name="password" />
+                                    <span  class="help-block" th:if="${#fields.hasErrors('password')}" th:errors="*{password}">Password Error</span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputEmail">Email</label>
+                                    <input type="text" class="form-control" id="inputEmail" placeholder="email" th:field="*{email}" name="email" />
+                                    <span  class="help-block" th:if="${#fields.hasErrors('email')}" th:errors="*{email}">Email Error</span>
+                                <span id="span1"  th:text="${err}"></span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="inputPhone">Phone</label>
+                                    <input type="text" class="form-control" id="inputPhone" placeholder="Phone" th:field="*{phone_no}" name="phone_no" />
+                                    <span  class="help-block" th:if="${#fields.hasErrors('phone_no')}" th:errors="*{phone_no}">Phone Number Error</span>
+                                     <span id="span2"  th:text="${err1}"></span>
+                                </div>
+                                 <div class="form-group">
+                                    <label for="inputPhone">Address</label>
+                                    <input type="text" class="form-control" id="inputAddress" placeholder="Address" th:field="*{address}" name="address" />
+                                    <span  class="help-block" th:if="${#fields.hasErrors('address')}" th:errors="*{address}">Address Error</span>
+                                </div>
+                                <div class="text-right">
+                                    <a href="/contacts/login1" th:href="@{/contacts/login1}" class="btn btn-default">Go To Login</a>
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
+                                  </div>
+                            </form>
+
+			  
+			</div>
+		</div>
+	</div>
+</div>
+<!--contact end here-->
+<script type="text/javascript">
+var v=getUrlParameter('param');
+
+</script>
+<!--map start here-->
+<div class="map">
+	<div class="container">
+		<div class="col-md-7 map-left wow slideInLeft" data-wow-delay="0.3s">
+			<h2>Contact Info</h2>
+				      <P>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</P>
+				     <div class="addre">
+					      <h4>Address</h4>
+					      <p>Address : Richard McClintock</p>
+						  <p>New Street : Letraset sheets </p>
+						  <p>ph : +123 859 6050</p>
+						  <p>Email : <a href="../mailto:info@example.com">example@gmail.com</a></p>
+					 </div>
+		</div>
+		<div class="col-md-5 map-right wow slideInRight" data-wow-delay="0.3s">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387144.007583421!2d-73.97800349999999!3d40.7056308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew+York%2C+NY%2C+USA!5e0!3m2!1sen!2sin!4v1415253431785"> </iframe>
+	   </div>
+	</div>
+</div>
+<!--map end here-->
+<!--footer start here-->
+<div class="footer">
+	<div class="container">
+		<div class="footer-main">
+			  <div class="col-md-4 ftr-grd wow zoomIn" data-wow-delay="0.3s">
+			  	 <h3>Get in Touch</h3>
+			  	 <p>8901 ibero  Road</p>
+			  	 <p>Nam libero tempore</p>
+			  	 <p>Phone: +148 5746 415</p>
+			  	 <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			  </div>
+			  <div class="col-md-4 ftr-grd wow zoomIn" data-wow-delay="0.3s">
+			  	 <h3>Recent Post</h3>
+					<div class="ftr-sub-gd">
+					<div class="col-md-4 ftr-gd1-img">
+						<a href="single.html"><img src="../images/f1.jpg" alt="" class="img-responsive"></a>
+					</div>
+					<div class="col-md-8 ftr-gd1-text">
+							<h4><a href="single.html">libero tempore soluta</a></h4>
+							<p>Lorem Ipsum comes Lorem Ipsum comes</p>
+					</div>
+					<div class="clearfix"> </div>
+				  </div>
+				  <div class="ftr-sub-gd">
+					<div class="col-md-4 ftr-gd1-img">
+						<a href="single.html"><img src="../images/f2.jpg" alt="" class="img-responsive"></a>
+					</div>
+					<div class="col-md-8 ftr-gd1-text">
+							<h4><a href="single.html">voluptas assumenda</a></h4>
+							<p>No one rejects dislikes it is pleasure</p>
+					</div>
+					<div class="clearfix"> </div>
+				  </div>
+				  <div class="ftr-sub-gd">
+					<div class="col-md-4 ftr-gd1-img">
+						<a href="single.html"><img src="../images/f3.jpg" alt="" class="img-responsive"></a>
+					</div>
+					<div class="col-md-8 ftr-gd1-text">
+							<h4><a href="single.html">dignissimos ducimus</a></h4>
+							<p>Lorem Ipsum comes Lorem Ipsum comes</p>
+					</div>
+					<div class="clearfix"> </div>
+				  </div>
+			  </div>
+			  <div class="col-md-4 ftr-grd wow zoomIn" data-wow-delay="0.3s">
+			  	 <h3>Join Our Newsletter</h3>
+			  	   <form>
+			  	 	<input type="text" value="Email"  onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}"/>
+			  	 	<input type="submit" value="Subscribe">
+			  	   </form>
+			  </div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+</div>
+<div class="copy-right wow slideInRight" data-wow-delay="0.3s">
+	  <p>Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="../http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="../http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+</div>
+<!--footer end here-->
+</body>
+</html>
